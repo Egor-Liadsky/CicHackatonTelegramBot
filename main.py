@@ -80,7 +80,8 @@ async def handle_location(message: types.Message, state: FSMContext):
         "image": data.get('photo'),
         "userCreatedId": message.from_user.id
     }
-    result = requests.post(setting.SERVER_IP + '/api/markers', json=json_data)
+    response = requests.post(setting.SERVER_IP + '/api/markers', data=json_data).text
+    print(response)
 
     await state.clear()
     await message.answer("Хорошо! Мы внесли все данные в нашу базу."
