@@ -1,0 +1,2 @@
+TOKEN = "6642723406:AAGmhLG67Rcrg-LrCOX3fL2PAOY1QjtpByE"
+SERVER_IP = 'https://5d3a-194-85-210-102.ngrok-free.app'
