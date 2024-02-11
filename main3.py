@@ -72,7 +72,7 @@ async def handle_location(message: types.Message, state: FSMContext):
     data = await state.get_data()
     json_data = {
         "description": message.text,
-        "city": 'Ростов-на-Дону',
+        "city": 'Бахмут',
         "latitude": data.get('lat'),
         "longitude": data.get('lon'),
         "image":  data.get('photo'),
